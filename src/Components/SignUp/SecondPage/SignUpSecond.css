@@ -1,0 +1,158 @@
+.SecondFormItems label::after {
+  color: #ff5555;
+  content: "*";
+  display: inline;
+}
+
+.SignUpSecond {
+  display: flex;
+  font-family: "Montserrat";
+  font-size: 16px;
+  line-height: 20px;
+  color: #0f071b;
+  width: clamp(60vw, 80vw, 90vw);
+}
+.SignUpSecondLeft {
+  /* min-width: 50vw; */
+  min-height: 60vh;
+}
+.SignUpSecondRight {
+  min-width: 40vw;
+  display: flex;
+}
+
+.SecondFormWomen {
+  position: absolute;
+  width: 213px;
+  height: 212px;
+  top: 50vh;
+  right: 20vw;
+}
+.SecondFormMen {
+  position: absolute;
+  width: 238px;
+  height: 146px;
+  top: 35vh;
+  right: 5vw;
+}
+
+.SignUpSecondItemsLines {
+  width: 40vw;
+  border: 1px solid #cabfbc;
+}
+
+.SignUpSecondForm {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.SecondFormItems {
+  margin-top: 30px;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.SecondFormItems > input[type="text"],
+.SecondFormItems > select {
+  padding: 5px;
+  border: 0px;
+  min-width: 40vw;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 10%;
+}
+
+.SecondFormItems > input,
+.SecondFormItems > textarea,
+.SecondFormItems > select {
+  font-family: inherit;
+  padding-left: 5px;
+  font-size: inherit;
+}
+.SecondFormItems > textarea:focus,
+.SecondFormItems > input:focus,
+.SecondFormItems > select:focus {
+  outline: none;
+  padding-left: 5px;
+}
+
+.SignUpSecondMoreHeading {
+  margin-top: 30px;
+  margin-left: 50px;
+  font-size: 20px;
+  line-height: 24px;
+  color: #4e8397;
+  font-weight: 400;
+}
+
+.SignUpSecondFormBottom {
+  display: flex;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-bottom: 30px;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.SignUpSecondFormBottom > input[type="submit"] {
+  background: #0f071b;
+  border-radius: 50px;
+  width: 106px;
+  height: 40px;
+  border-style: none;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  cursor: pointer;
+  color: #ebe7e6;
+}
+
+.SignUpSecondFormBottom > h4 {
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Montserrat";
+  font-weight: 600px;
+}
+
+.SecondFormItems .rmsc .dropdown-container {
+  border: none;
+}
+
+.SecondFormItems .rmsc .gray {
+  color: #161b1e;
+}
+.SecondFormItems .rmsc .dropdown-heading {
+  padding-right: 0;
+}
+
+.SecondFormItems .dropdown-content label::after {
+  display: none;
+}
+@media only screen and (max-width: 800px) {
+  .SignUpSecondRight {
+    display: none;
+  }
+  .SecondFormItems {
+    margin-left: 0;
+  }
+  .SignUpSecondItemsLines {
+    width: 80vw;
+  }
+  .SecondFormItems > select {
+    min-width: 80vw;
+    margin: 0;
+  }
+  .SignUpSecondMoreHeading {
+    margin-left: 0;
+  }
+  .SignUpSecondFormBottom {
+    margin-left: 0;
+  }
+  .SecondFormItems option {
+    width: 40vw;
+  }
+}

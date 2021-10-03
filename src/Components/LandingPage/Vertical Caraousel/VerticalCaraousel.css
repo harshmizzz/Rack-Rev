@@ -1,0 +1,151 @@
+.VerticalCarousel {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-evenly;
+  min-height: 90vh;
+  /* width: 99vw; */
+  z-index: -999;
+  margin-bottom: 20px;
+  font-family: "Montserrat";
+  text-align: center;
+  color: #0f071b;
+}
+.swiper-slide:not(.swiper-slide-active) {
+  opacity: 0 !important;
+}
+
+.VerticalCarouselHeading {
+  height: 10vh;
+  display: flex;
+  align-items: flex-end;
+  margin-left: 10%;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+}
+
+.VerticalCarousel .swiper-container-pointer-events.swiper-container-vertical {
+  touch-action: pan-x;
+  height: 80vh;
+  width: 100%;
+}
+
+.VerticalCarousel .swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #f5a834;
+}
+
+.VerticalImageContainer {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.VerticalTopNumber {
+  font-size: 48px;
+  line-height: 59px;
+  text-align: center;
+  color: #ffc452;
+  margin-left: 20px;
+}
+
+.VerticalImageLeftTop,
+.VerticalImageMiddle,
+.VerticalImageBottom {
+  width: 80%;
+}
+
+.VerticalImageLeftTop {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 110.75%;
+  color: #0f071b;
+  /* margin-bottom: 50px; */
+}
+
+.VerticalImageMiddle {
+  margin-top: 25px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #0f071b;
+  width: 70%;
+}
+
+.VerticalImageLeft {
+  width: 60%;
+  padding-left: 5%;
+  display: flex;
+  /* height: 80%; */
+  align-items: baseline;
+  justify-content: space-around;
+}
+
+.VerticalTopContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-left: 20px;
+  text-align: left;
+  height: 100%;
+}
+
+.VerticalImageRight {
+  width: 70%;
+}
+
+.VerticalImageRight {
+  object-fit: contain;
+  height: 80vh;
+}
+
+.VerticalImageRight > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.VerticalFullImage {
+  height: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+  .VerticalCarousel .swiper-container {
+    width: 100% !important;
+    min-height: 20vh;
+  }
+
+  .VerticalCarousel {
+    min-height: 20vh;
+  }
+  .VerticalImageContainer {
+    flex-direction: column-reverse;
+  }
+  .VerticalImageRight {
+    height: 30vh;
+    width: 100%;
+  }
+  .VerticalImageLeft {
+    width: 90%;
+  }
+  .VerticalTopNumber {
+    margin-left: 0;
+  }
+  .VerticalTopContent {
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .VerticalFullImage {
+    height: 100%;
+    width: 100%;
+  }
+}
