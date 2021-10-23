@@ -29,7 +29,7 @@ function Header() {
           </Link>
         </div>
       </div>
-      <div className="HeaderRight">
+      <div className="HeaderRight" onClick={()=>{window.location="/SignUp"}}>
         <div>Join Now</div>
       </div>
     </div>

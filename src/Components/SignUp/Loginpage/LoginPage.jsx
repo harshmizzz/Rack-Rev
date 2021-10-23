@@ -1,9 +1,7 @@
 import React, { useEffect } from "react";
 import "./LoginPage.css";
-// import Heart2 from "../../../Images/SignUp/Hands Heart.png";
-// import Flower2 from "../../../Images/SignUp/Hands Flower-1.png";
-// import eye from "../../../Images/SignUp/eye.png";
-// import google from "../../../Images/SignUp/google.png";
+import eye from "../../../Images/eye.png";
+import google from "../../../Images/google.png";
 import { useForm } from "react-hook-form";
 import { ErrorMessage } from "@hookform/error-message";
 import { useState } from "react";
@@ -131,7 +129,6 @@ function LoginPage() {
   return (
     <div className="LoginContainer">
       <div className="LoginFirstPage">
-        {/* <img src={Flower2} alt="heart" className="LoginFlower" /> */}
         <div className="LoginForm">
           <div className="LoginHeadingContainer">
             <h3 className="LoginFormHeading">Glad to see you back!</h3>
@@ -172,7 +169,7 @@ function LoginPage() {
                 })}
                 placeholder="Password"
               />
-              {/* <img onClick={togglePasswordVisiblity} alt="eye" src={eye} /> */}
+              <img onClick={togglePasswordVisiblity} alt="eye" src={eye} />
             </div>
             <div className="LoginLines"></div>
             <div
@@ -191,18 +188,19 @@ function LoginPage() {
             <input type="submit" value="Log In" />
           </form>
           <div className="LoginFormLineAlreadyLine"></div>
-          <div className="LoginFormAlreadyAccount">
-            <div className="left">Don't have an account?</div>
-            <div className="right">
-              <Link to="/SignUp">Sign Up</Link>
+          <div className="LoginRight">
+            <div className="LoginFormAlreadyAccount">
+              <div className="left">Don't have an account?</div>
+              <div className="right">
+                <Link to="/SignUp">Sign Up</Link>
+              </div>
+            </div>
+            <div onClick={signInWithGoogle} className="LoginLoginButton">
+              <img src={google} alt="google" />
+              <p>Log in with Google</p>
             </div>
           </div>
-          <div onClick={signInWithGoogle} className="LoginLoginButton">
-            {/* <img src={google} alt="google" /> */}
-            <p>Log in with Google</p>
-          </div>
         </div>
-        {/* <img src={Heart2} alt="Flower" className="LoginHeart" /> */}
       </div>
     </div>
   );

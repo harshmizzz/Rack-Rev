@@ -1,9 +1,7 @@
 import React from "react";
 import "./SignUpPage.css";
-// import Heart from "../../../Images/SignUp/We Are Women Love.png";
-// import Flower from "../../../Images/SignUp/Hands Flower.png";
-// import eye from "../../../Images/SignUp/eye.png";
-// import google from "../../../Images/SignUp/google.png";
+import eye from "../../../Images/eye.png";
+import google from "../../../Images/google.png";
 import { useForm } from "react-hook-form";
 import { ErrorMessage } from "@hookform/error-message";
 import { useState } from "react";
@@ -74,9 +72,8 @@ function SignUpPage() {
     setPasswordShown(passwordShown ? false : true);
   };
   return (
-    <div className="SignUpContainer">
+    // <div className="SignUpContainer">
       <div className="SignUpFirstPage">
-        {/* <img src={Heart} alt="heart" className="signUpHeart" /> */}
         <div className="SignUpForm">
           <div className="SignUpHeadingContainer">
             <h3 className="SignUpFormHeading">Let's get you started!</h3>
@@ -117,7 +114,7 @@ function SignUpPage() {
                 })}
                 placeholder="Create a password"
               />
-              {/* <img onClick={togglePasswordVisiblity} alt="eye" src={eye} /> */}
+              <img onClick={togglePasswordVisiblity} alt="eye" src={eye} />
             </div>
             <div className="SignUpLines"></div>
             <ErrorMessage
@@ -129,20 +126,21 @@ function SignUpPage() {
             <input type="submit" value="Sign Up" />
           </form>
           <div className="SignUpFormLineAlreadyLine"></div>
-          <div className="SignUpFormAlreadyAccount">
-            <div className="left">Already have an account?</div>
-            <div className="right">
-              <Link to="/login">Log In</Link>{" "}
+          <div className="SignUpRight">
+            <div className="SignUpFormAlreadyAccount">
+              <div className="left">Already have an account?</div>
+              <div className="right">
+                <Link to="/login">Log In</Link>{" "}
+              </div>
+            </div>
+            <div onClick={signInWithGoogle} className="SignUpLoginButton">
+              <img src={google} alt="google" />
+              <p>Sign Up with Google</p>
             </div>
           </div>
-          <div onClick={signInWithGoogle} className="SignUpLoginButton">
-            {/* <img src={google} alt="google" /> */}
-            <p>Sign Up with Google</p>
-          </div>
         </div>
-        {/* <img src={Flower} alt="Flower" className="signUpFlower" /> */}
       </div>
-    </div>
+    // </div>
   );
 }
 export default SignUpPage;

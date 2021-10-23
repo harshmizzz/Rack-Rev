@@ -3,64 +3,47 @@
   align-items: flex-start;
   justify-content: center;
   width: 100%;
-  margin-left: -100px;
   height: 100%;
-}
-.LoginHeart {
-  width: 61px;
-  height: 59px;
-  position: absolute;
-  margin-top: 3%;
-  margin-left: 20%;
-  transform: rotate(11.11deg);
-}
-
-.LoginFlower {
-  position: absolute;
-  width: 39.63px;
-  height: 57.43px;
-  transform: rotate(7.11deg);
-  /* margin-left: clamp(20vw,30vw,30vw);
-    padding-top: clamp(10vh,30vh,60vh); */
-  padding-top: 18%;
-  margin-left: -6%;
-  transform: rotate(11deg);
+  font-family: "Montserrat";
 }
 
 .LoginContainer {
+  margin-left: 5%;
   display: flex;
-  align-items: flex-start;
+  align-items: center !important;
   justify-content: center;
-  /* min-height: 60vh; */
-  min-height: 50vh;
-  width: 100%;
+  min-height: 60vh;
+  width: 95%;
 }
 .LoginForm {
-  min-width: 30%;
+  /* min-width: 30%1 */
+  justify-content: space-around;
+  width: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  margin-left: 80px;
 }
 .LoginForm > form {
   display: flex;
   flex-direction: column;
-  max-width: 25vw;
 }
 .LoginFormHeading {
-  font-family: "Montserrat";
+  font-family: Montserrat;
+  font-style: normal;
   font-weight: 600;
   font-size: 22px;
   line-height: 27px;
-  color: #f5a834;
+  color: #4e8397;
   margin-top: 30px;
   margin-bottom: -10px;
 }
 .LoginSmallHeading {
-  font-family: "Montserrat";
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
   font-size: 12px;
   line-height: 15px;
   color: #0f071b;
+  margin-top: 10px;
 }
 
 .LoginFormBox > input[type="text"],
@@ -130,11 +113,8 @@
 }
 
 .LoginFormLineAlreadyLine {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  border: 1px solid #cabfbc;
-  min-width: 22vw;
-  margin-left: 15%;
+  border-left: 6px solid green;
+  height: 10vh;
 }
 
 .LoginFormAlreadyAccount {
@@ -161,8 +141,8 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.1));
   border-radius: 50px;
   width: 250px;
-  cursor: pointer;
   height: 50px;
+  cursor: pointer;
 }
 .LoginLoginButton > img {
   width: 20px;
@@ -181,7 +161,6 @@
   display: flex;
   margin: 0;
   margin-block: 0;
-
   color: #bf1650;
   width: 15vw;
 }
@@ -191,6 +170,74 @@
   display: flex;
   width: inherit;
 }
+
+.LoginRight {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 600px) {
+  .LoginContainer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .LoginHeart {
+    position: absolute;
+    right: 2vw;
+    top: 25vh;
+  }
+  .LoginForm > form {
+    width: 60vw;
+    margin-left: 40px;
+  }
+  .LoginFirstPage {
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100vw;
+  }
+  .LoginFormLineAlreadyLine {
+    position: relative;
+    width: 60vw;
+    margin: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 40px;
+  }
+  .LoginFlower {
+    position: absolute;
+    top: 70vh;
+    left: 8vw;
+    margin: 0;
+    padding: 0;
+  }
+  .LoginLoginButton {
+    /* margin: 0; */
+    margin-left: 40px;
+    margin-bottom: 5px;
+  }
+  .LoginFormAlreadyAccount {
+    margin-left: 40px;
+  }
+  .LoginFormBox > input[type="submit"] {
+    width: 40vw;
+    position: relative;
+    left: 11vw;
+    margin-top: 15px;
+  }
+  .LoginLines {
+    width: 100%;
+  }
+  .LoginFormBox > input[type="text"],
+  .LoginPassword > input[type="password"],
+  .LoginPassword > input[type="text"] {
+    width: 90%;
+  }
+  .LoginPassword {
+    width: 100%;
+  }
+}
+
 .LoginForgotPassword {
   font-style: italic;
   font-weight: 500;
