@@ -24,6 +24,7 @@
 }
 .LoginForm > form {
   display: flex;
+  gap: 10px;
   flex-direction: column;
 }
 .LoginFormHeading {
@@ -33,7 +34,6 @@
   font-size: 22px;
   line-height: 27px;
   color: #4e8397;
-  margin-top: 30px;
   margin-bottom: -10px;
 }
 .LoginSmallHeading {
@@ -113,8 +113,11 @@
 }
 
 .LoginFormLineAlreadyLine {
-  border-left: 6px solid green;
-  height: 10vh;
+  height: 40vh;
+  width: 4px;
+  background: #cabfbc;
+  border: 1px solid #cabfbc;
+  border-radius: 4px;
 }
 
 .LoginFormAlreadyAccount {
@@ -130,9 +133,12 @@
   text-decoration: underline;
   color: #0f071b;
 }
+
+.LoginFormAlreadyAccount > .right > a {
+  color: #0f071b;
+}
 .LoginLoginButton {
-  margin-top: 30px;
-  margin-bottom: 40px;
+  margin-top: 10px;
   margin-left: 40px;
   display: flex;
   justify-content: center;
@@ -174,6 +180,16 @@
 .LoginRight {
   display: flex;
   flex-direction: column;
+  margin-left: -3vw;
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+  .LoginFormLineAlreadyLine {
+    display: none;
+  }
+  .LoginRight {
+    margin-left: 40px;
+  }
 }
 
 @media only screen and (max-width: 600px) {

@@ -25,6 +25,7 @@
 .SignUpForm > form {
   display: flex;
   flex-direction: column;
+  gap: 10px;
 }
 .SignUpFormHeading {
   font-family: Montserrat;
@@ -33,7 +34,6 @@
   font-size: 22px;
   line-height: 27px;
   color: #4e8397;
-  margin-top: 30px;
   margin-bottom: -10px;
 }
 .SignUpSmallHeading {
@@ -113,8 +113,15 @@
 }
 
 .SignUpFormLineAlreadyLine {
-  border-left: 6px solid green;
-  height: 10vh;
+  height: 40vh;
+  width: 4px;
+  background: #cabfbc;
+  border: 1px solid #cabfbc;
+  border-radius: 4px;
+}
+
+.SignUpFormAlreadyAccount > .right > a {
+  color: #0f071b;
 }
 
 .SignUpFormAlreadyAccount {
@@ -131,8 +138,7 @@
   color: #0f071b;
 }
 .SignUpLoginButton {
-  margin-top: 30px;
-  margin-bottom: 40px;
+  margin-top: 10px;
   margin-left: 40px;
   display: flex;
   justify-content: center;
@@ -174,6 +180,7 @@
 .SignUpRight {
   display: flex;
   flex-direction: column;
+  margin-left: -3vw;
 }
 
 @media only screen and (max-width: 600px) {
@@ -235,5 +242,14 @@
   }
   .signUpPassword {
     width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+  .SignUpFormLineAlreadyLine {
+    display: none;
+  }
+  .SignUpRight {
+    margin-left: 0;
   }
 }
