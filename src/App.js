@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import LandingPage from "./Pages/LandingPage/LandingPage";
 import SignUp from "./Pages/SignUp/SignUp.jsx";
 import Main from "./Pages/MainPage/Main";
+import InDevelopment from "./Components/MainPage/DevelopmentError/InDevelopment";
 function App() {
   return (
     <Router>
@@ -23,7 +24,10 @@ function App() {
           <Route path="/login" exact>
             <SignUp />
           </Route>
-          <Route path="/main" exact>
+          <Route path="/Dashboard" exact>
+            <Main />
+          </Route>
+          <Route path="/InDevelopment" exact>
             <Main />
           </Route>
         </Switch>

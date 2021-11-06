@@ -1,0 +1,91 @@
+.HeaderMain {
+  background: #d5cabd;
+  backdrop-filter: blur(8px);
+  height: clamp(5vh, 8vh, 8vh);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.HeaderMainLeft {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  gap: 10vw;
+}
+.HeaderMainLogo {
+  cursor: pointer;
+  font-family: Redressed;
+  font-style: normal;
+  font-weight: normal;
+  font-size: clamp(1.5rem, 2rem, 2.5rem);
+  line-height: 40px;
+  color: #4e8397;
+}
+.HeaderMainLeftItems {
+  display: flex;
+  align-items: center;
+  gap: 3vw;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: clamp(0.9rem, 1rem, 1.2rem);
+  line-height: 17px;
+  color: #000000;
+}
+.HeaderMainRight {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.HeaderMainRight > div {
+  border-bottom: 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #263238;
+  margin-right: 40px;
+  cursor: pointer;
+}
+.HeaderMainRight p {
+  margin-left: 0.5vh;
+}
+.MainNavLine {
+  margin-top: -20px;
+  height: 2px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.HeaderMainOff {
+  display: none;
+}
+
+.HeaderMainOn {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 5vw;
+  top: 8vh;
+  cursor: pointer;
+  background: #f1f1f1;
+  width: 15vw;
+  border-radius: 5px;
+  gap: 3px;
+  padding:10px;
+}
+
+.HeaderMainOn > p {
+  border-bottom: 1px solid grey;
+  height: 30px;
+}

@@ -1,0 +1,39 @@
+.InDevelopment {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat";
+  font-weight: 500;
+}
+
+.InDevelopment > div {
+  border-radius: 10px;
+  border: 1px solid grey;
+  height: 50%;
+  width: 60vw;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  background-color: #c4c4c4;
+}
+
+.InDevelopment > div > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.InDevelopmentLink {
+  margin-top: 20px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+  .InDevelopment > div {
+    width: 90vw;
+  }
+}

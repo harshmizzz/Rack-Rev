@@ -5,7 +5,12 @@ function Header() {
   return (
     <div className="Header">
       <div className="HeaderLeft">
-        <div className="HeaderLogo">
+        <div
+          className="HeaderLogo"
+          onClick={() => {
+            window.location = "/";
+          }}
+        >
           <p>RackRev</p>
         </div>
         <div className="HeaderLeftItems">
@@ -29,7 +34,12 @@ function Header() {
           </Link>
         </div>
       </div>
-      <div className="HeaderRight" onClick={()=>{window.location="/SignUp"}}>
+      <div
+        className="HeaderRight"
+        onClick={() => {
+          window.location = "/SignUp";
+        }}
+      >
         <div>Join Now</div>
       </div>
     </div>
